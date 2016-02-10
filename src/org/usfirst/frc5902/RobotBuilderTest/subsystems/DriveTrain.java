@@ -13,6 +13,8 @@ package org.usfirst.frc5902.RobotBuilderTest.subsystems;
 
 import org.usfirst.frc5902.RobotBuilderTest.RobotMap;
 import org.usfirst.frc5902.RobotBuilderTest.commands.*;
+
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.Talon;
@@ -51,5 +53,18 @@ public class DriveTrain extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
-}
+    
+    public void arcadeDrive(Joystick stick) {
+    	robotDrive.arcadeDrive(stick);
+    }
+	
+    public void driveStraight(double speed) {
+		robotDrive.tankDrive(speed, speed);
+	}
+	
+/*	public double getDistanceToPlatform() {
+		return ultrasonic.get
+} */
+	
+	}
 
