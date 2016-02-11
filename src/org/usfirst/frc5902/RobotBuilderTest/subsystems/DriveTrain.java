@@ -15,6 +15,7 @@ import org.usfirst.frc5902.RobotBuilderTest.RobotMap;
 import org.usfirst.frc5902.RobotBuilderTest.commands.*;
 
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.PIDSource;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.Talon;
@@ -61,10 +62,6 @@ public class DriveTrain extends Subsystem {
     public void driveStraight(double speed) {
 		robotDrive.tankDrive(speed, speed);
 	}
-	
-/*	public double getDistanceToPlatform() {
-		return ultrasonic.get
-} */
 	
 	}
 
