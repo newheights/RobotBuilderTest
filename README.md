@@ -5,6 +5,19 @@ This is a test of building code using the WPI robot Builder.
 We are watching and following along these videos from WPI 
 https://www.youtube.com/playlist?list=PLYA9eZLlgz7t9Oleid2wtlgnvhGObeKzp
 
+Todo List
+- Test ArcadeDrive and make sure it works
+- Figure out button numbers for each button on Driver Xbox
+- Figure out button numbers for each button on Driver Joystick
+- - Map Joystick forward and back to manual control of the intake motor.
+- Add in and build out commands for different drive speeds
+- Add in and build out an invert controls command
+- Figure out how to read the limit switch for the intake mech
+- Figure out how to read the encoder on the intakeMotor
+- Learn about Servos and see if we can hook one up
+- Decide what we would like to do for Autonomous
+- Wire up and test an Ultrasonic Sensor
+
 # Subsystems
 
 DriveTrain - Robot Driving
