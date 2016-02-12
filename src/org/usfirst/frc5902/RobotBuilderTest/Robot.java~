@@ -27,7 +27,7 @@ import org.usfirst.frc5902.RobotBuilderTest.subsystems.*;
  * directory.
  */
 public class Robot extends IterativeRobot {
-
+    CameraServer USBcamera;
     Command autonomousCommand;
 
     public static OI oi;
@@ -45,10 +45,14 @@ public class Robot extends IterativeRobot {
     //BEGIN CAMERA CODE
     
     public void robotInit() {
-    RobotMap.init();
-    CameraServer camera = new CameraServer();
-    camera.setQuality(50);
-    camera.startAutomaticCapture("cam0");
+    	RobotMap.init();
+           
+      //BEGIN CAMERA CODE
+        
+    	 USBcamera = CameraServer.getInstance();
+         USBcamera.setQuality(50);
+         //the camera name (ex "cam0") can be found through the roborio web interface
+         USBcamera.startAutomaticCapture("cam0");
     
     //END CAMERA CODE
     
