@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+ * This Autonomous Command makes the robot drive straight at half power for 1 second and then stop.
  */
 public class AutonomousCommand extends Command {
 
@@ -37,6 +37,8 @@ public class AutonomousCommand extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	Robot.driveTrain.driveStraight(.5);
+    	setTimeout(1);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -45,15 +47,17 @@ public class AutonomousCommand extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return isTimedOut();
     }
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.driveTrain.driveStraight(0);
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    	end();
     }
 }
