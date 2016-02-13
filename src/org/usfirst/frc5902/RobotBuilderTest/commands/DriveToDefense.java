@@ -39,7 +39,7 @@ public class DriveToDefense extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
     	Robot.driveTrain.driveStraight(.5);
-    	setTimeout(1);
+    	setTimeout(50);
     }
 
     // Called repeatedly when this Command is scheduled to run

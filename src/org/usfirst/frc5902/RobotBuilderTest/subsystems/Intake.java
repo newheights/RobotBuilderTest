@@ -52,7 +52,7 @@ public class Intake extends Subsystem {
     	intakeMotor.set(0);
     }
     public void intakeDriverJoystick (Joystick stick) {
-    	intakeMotor.set(stick.getY());
+    	intakeMotor.set(-stick.getY());
     }
     
     public void initDefaultCommand() {
