@@ -64,10 +64,10 @@ public class DriveTrain extends Subsystem {
     	robotDrive.arcadeDrive(stick.getY(),stick.getX());
     }
     public void halfArcadeDrive(Joystick stick) {
-    	robotDrive.arcadeDrive(-0.33*stick.getY(),-0.33*stick.getX());
+    	robotDrive.arcadeDrive(-0.50*stick.getY(),-0.50*stick.getX());
     }
     public void halfInvertedArcadeDrive(Joystick stick) {
-    	robotDrive.arcadeDrive(0.33*stick.getY(),0.33*stick.getX());
+    	robotDrive.arcadeDrive(0.50*stick.getY(),0.50*stick.getX());
     }
 	
     public void driveStraight(double speed) {
