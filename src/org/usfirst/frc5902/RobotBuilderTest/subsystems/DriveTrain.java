@@ -59,12 +59,11 @@ public class DriveTrain extends Subsystem {
     public void arcadeDrive(Joystick stick) {
     	robotDrive.arcadeDrive(-stick.getY(),-stick.getX());
     }
-    //invert works
     public void invertArcadeDrive(Joystick stick) {
-    	robotDrive.arcadeDrive(stick.getY(),stick.getX());
+    	robotDrive.arcadeDrive(stick.getY(),-stick.getX()); 
     }
     public void halfArcadeDrive(Joystick stick) {
-    	robotDrive.arcadeDrive(-0.50*stick.getY(),-0.50*stick.getX());
+    	robotDrive.arcadeDrive(-0.50*stick.getY(),-0.50*stick.getX()); // May have to change this back if needed
     }
     public void halfInvertedArcadeDrive(Joystick stick) {
     	robotDrive.arcadeDrive(0.50*stick.getY(),0.50*stick.getX());
