@@ -55,7 +55,6 @@ public class DriveTrain extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
-    
     public void arcadeDrive(Joystick stick) {
     	robotDrive.arcadeDrive(-stick.getY(),-stick.getX());
     }
@@ -72,10 +71,13 @@ public class DriveTrain extends Subsystem {
     public void driveStraight(double speed) {
 		robotDrive.tankDrive(speed, speed);
 	}
-	
-    public void ultrasonicSample() {
-    	double range = Robot.driveTrain.ultraSonicMaxbot.getRangeInches(); // reads the range on the ultrasonic sensor
-    }
+    /* Add this code again to drive with the Joystick 
+    public void arcadeDriveJoystick(double move, double rotate, double speed) {
+    	
+    	  robotDrive.arcadeDrive(move*speed, rotate*speed);
+    	 
+    } */
+   
     
 	}
 

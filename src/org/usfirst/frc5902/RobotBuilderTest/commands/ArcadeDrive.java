@@ -41,10 +41,19 @@ public class ArcadeDrive extends Command {
     }
 
     // Called repeatedly when this Command is scheduled to run
+   
     protected void execute() {
     	Robot.driveTrain.arcadeDrive(Robot.oi.getDriverXbox());
     }
-
+    
+    /* Add in to Drive with Joystick
+      protected void execute() {
+     
+    	Robot.speed = -Robot.oi.getDriverJoystick().getThrottle();
+    	
+    	Robot.driveTrain.arcadeDrive(Robot.oi.getDriverJoystick().getY(), Robot.oi.getDriverJoystick().getZ(), Robot.speed);
+    }
+*/
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
         return false;
