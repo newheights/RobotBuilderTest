@@ -15,7 +15,9 @@ import org.usfirst.frc5902.RobotBuilderTest.RobotMap;
 import org.usfirst.frc5902.RobotBuilderTest.commands.*;
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Sendable;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
@@ -37,6 +39,10 @@ public class PneumaticSystem extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    
+    public Value getPValue(){
+    	return doubleSolenoidPusher.get();
+    }
 	 public void forwardActuator() {
 		 doubleSolenoidPusher.set(DoubleSolenoid.Value.kForward);
 	 }

@@ -41,7 +41,7 @@ public class SensorBase extends Subsystem {
     }
     
     public double getDistance() 	{
-    	return ultraSonicMaxbotix.getVoltage()/.009766; // convert analog voltage to inches
+    	return ultraSonicMaxbotix.getVoltage()/.009766-12; // convert analog voltage to inches
     }
 
     public void initDefaultCommand() {
