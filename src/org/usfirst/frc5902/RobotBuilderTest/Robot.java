@@ -120,9 +120,9 @@ public class Robot extends IterativeRobot {
      */
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
-        SmartDashboard.putNumber("Ultrasonic Inches", sensorBase.getDistance());
+        SmartDashboard.putNumber("Ultrasonic Distance in 'Yays'", sensorBase.getDistance());
         SmartDashboard.putNumber("Ultrasonic Voltage", sensorBase.getUltrasonicVoltage());
-        SmartDashboard.putData("Pnematic Solinoid", pneumaticSystem.getPValue());
+        SmartDashboard.putData("Pneumatic Status", pneumaticSystem.doubleSolenoidPusher.get());        
         }
 
     /**
