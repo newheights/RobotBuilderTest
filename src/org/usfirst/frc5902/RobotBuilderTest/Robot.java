@@ -52,7 +52,8 @@ public class Robot extends IterativeRobot {
     
     public void robotInit() {
     	RobotMap.init();
-           
+        SmartDashboard.putString("Solenoid Status:", "I am E.W.T!"); 
+
       //BEGIN CAMERA CODE
         
     	 USBcamera = CameraServer.getInstance();
@@ -121,8 +122,13 @@ public class Robot extends IterativeRobot {
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
         SmartDashboard.putNumber("Ultrasonic Distance in 'Yays'", sensorBase.getDistance());
-        SmartDashboard.putNumber("Ultrasonic Voltage", sensorBase.getUltrasonicVoltage());
-        SmartDashboard.putData("Pneumatic Status", pneumaticSystem.doubleSolenoidPusher.get());        
+        SmartDashboard.putString("Solenoid Status from to string:", pneumaticSystem.doubleSolenoidPusher.get().toString()); 
+
+        // Put Xbox X & Y Axis
+        SmartDashboard.putNumber("Xbox X axis", oi.driverXbox.getX());
+        SmartDashboard.putNumber("Xbox Y axis", oi.driverXbox.getY());
+
+
         }
 
     /**

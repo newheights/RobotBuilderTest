@@ -12,6 +12,8 @@
 package org.usfirst.frc5902.RobotBuilderTest.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**

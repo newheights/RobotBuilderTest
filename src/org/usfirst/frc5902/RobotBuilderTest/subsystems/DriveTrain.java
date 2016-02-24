@@ -71,6 +71,12 @@ public class DriveTrain extends Subsystem {
     public void driveStraight(double speed) {
 		robotDrive.tankDrive(speed, speed);
 	}
+    
+    //Alows us to compensate for our drift. If we call drivestraight with two arguments then it will call this one left speed and right speed
+    public void driveStraight(double speedL, double speedR) {
+		robotDrive.tankDrive(speedL, speedR);
+	}
+    
     /* Add this code again to drive with the Joystick 
     public void arcadeDriveJoystick(double move, double rotate, double speed) {
     	

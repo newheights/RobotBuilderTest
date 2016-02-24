@@ -42,21 +42,14 @@ public class DriveToDefense extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.driveStraight(.33);
-    	Robot.sensorBase.getDistance();
+    	Robot.driveTrain.driveStraight(.50, .538); // Left speed & Right Speed
+    	setTimeout(7.25); // Drive roughly 16ft (195 inches to go Under low Bar.
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-    if (Robot.sensorBase.getDistance() <= 24)
-    {
-    	return true;
+    	return isTimedOut();
     }
-    else
-    {
-    	return false;
-    }
-    	}
     
 
     // Called once after isFinished returns true

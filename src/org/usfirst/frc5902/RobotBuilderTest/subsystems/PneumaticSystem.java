@@ -40,12 +40,9 @@ public class PneumaticSystem extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     
-    public Value getPValue(){
-    	return doubleSolenoidPusher.get();
-    }
 	 public void forwardActuator() {
 		 doubleSolenoidPusher.set(DoubleSolenoid.Value.kForward);
-	 }
+		 }
 	 public void reverseActuator() {
 		 doubleSolenoidPusher.set(DoubleSolenoid.Value.kReverse);
 	 }
