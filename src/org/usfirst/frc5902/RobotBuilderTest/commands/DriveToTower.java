@@ -5,7 +5,7 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ Drives the robot to the base of the tower during autonomous
  */
 public class DriveToTower extends Command {
 
