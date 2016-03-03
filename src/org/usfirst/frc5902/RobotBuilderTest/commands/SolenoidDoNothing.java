@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+Tells the robot what to do when the pneumatics aren't running
  */
 public class SolenoidDoNothing extends Command {
 
