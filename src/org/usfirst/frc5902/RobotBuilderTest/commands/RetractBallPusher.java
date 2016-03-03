@@ -17,7 +17,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+Retracts the pneumatic kicky-thingy-majigy
  */
 public class RetractBallPusher extends Command {
 
