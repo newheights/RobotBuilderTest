@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+Stops the flap from spinning
  */
 public class IntakeDoNothing extends Command {
 
