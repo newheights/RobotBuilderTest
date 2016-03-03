@@ -5,7 +5,7 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+Drives the robot until the ulrasonic sensor reads a certain distance during autonomous...seriously, you've got to read the names...
  */
 public class DriveTillUltrasonicValue extends Command {
 
