@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+Reduces the speed of arcadedrive to half of its original speed.
  */
 public class HalfArcadeDrive extends Command {
 
