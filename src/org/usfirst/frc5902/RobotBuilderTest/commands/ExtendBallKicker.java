@@ -17,7 +17,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+Extends the pneumatic kicky-thingy-magjigy
  */
 public class ExtendBallKicker extends Command {
 
