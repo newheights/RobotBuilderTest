@@ -17,7 +17,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+Spins the flap
  */
 public class EjectBall extends Command {
 
