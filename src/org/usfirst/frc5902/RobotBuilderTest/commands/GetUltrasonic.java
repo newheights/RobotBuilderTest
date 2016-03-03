@@ -17,7 +17,7 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import org.usfirst.frc5902.RobotBuilderTest.RobotMap;
 
 /**
- *
+Retrieves the distance sensed by the ultrasonic sensor
  */
 public class GetUltrasonic extends Command {
 
