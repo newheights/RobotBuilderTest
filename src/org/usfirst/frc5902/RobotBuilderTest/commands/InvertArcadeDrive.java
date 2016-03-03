@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+Inverts the controls of arcadedrive
  */
 public class InvertArcadeDrive extends Command {
 
