@@ -5,7 +5,7 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+Spins the flap 180(one hundred eighty)degrees
  */
 public class OneEightyIntake extends Command {
 
