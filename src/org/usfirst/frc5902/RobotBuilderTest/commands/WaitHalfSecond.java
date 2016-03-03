@@ -5,7 +5,7 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+Tells the robot to stop/take a break for half of a second
  */
 public class WaitHalfSecond extends Command {
 
