@@ -6,7 +6,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
- Automatically shoots the ball
+ Automatically shoots the ball during autonomous...
  */
 public class AutoShootBall extends Command {
 
