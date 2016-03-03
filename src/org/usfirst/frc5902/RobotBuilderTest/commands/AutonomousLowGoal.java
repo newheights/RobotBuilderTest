@@ -3,7 +3,8 @@ package org.usfirst.frc5902.RobotBuilderTest.commands;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 /**
- *
+ Automatically drives the robot to the low-goal...
+ Fahrt das roboter zu das niedrieges tor automatish...
  */
 public class AutonomousLowGoal extends CommandGroup {
     
