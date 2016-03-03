@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+ Does no things...literally...we aren't making this up...seriously, just look at the name...
  */
 public class DoNothing extends Command {
 
