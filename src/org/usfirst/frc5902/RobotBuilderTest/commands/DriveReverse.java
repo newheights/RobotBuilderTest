@@ -15,7 +15,9 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+ 
+ Automatilcally drives the robot in reverse during autonomous
+ Fahrt das roboter rueckvarts vahrend autonomous
  */
 public class DriveReverse extends Command {
 
