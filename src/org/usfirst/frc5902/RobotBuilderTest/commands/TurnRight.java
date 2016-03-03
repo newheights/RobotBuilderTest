@@ -5,7 +5,7 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+Turns the robot to the right during autonomous
  */
 public class TurnRight extends Command {
 
