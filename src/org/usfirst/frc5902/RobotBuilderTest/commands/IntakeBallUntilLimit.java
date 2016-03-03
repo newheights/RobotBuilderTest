@@ -15,7 +15,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5902.RobotBuilderTest.Robot;
 
 /**
- *
+spins the flap for a set amount of time
  */
 public class IntakeBallUntilLimit extends Command {
 
