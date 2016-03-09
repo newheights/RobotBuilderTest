@@ -71,8 +71,10 @@ public class OI {
         
         button3 = new JoystickButton(driverJoystick, 3);
         button3.whileHeld(new RetractBallPusher());
+        
         button5 = new JoystickButton(driverJoystick, 5);
         button5.whileHeld(new ExtendBallKicker());
+        
         button4 = new JoystickButton(driverJoystick, 4);
         button4.whenPressed(new OneEightyIntake());
 
