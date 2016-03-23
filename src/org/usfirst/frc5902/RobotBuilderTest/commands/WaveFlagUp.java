@@ -5,14 +5,14 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
-Turns the robot to the right during autonomous
+ Waves the flag
  */
-public class TurnRight extends Command {
+public class WaveFlagUp extends Command {
 
-    public TurnRight() {
+    public WaveFlagUp() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(Robot.driveTrain);
+    	requires(Robot.cheeringSection);
     }
 
     // Called just before this Command runs the first time
@@ -21,18 +21,17 @@ public class TurnRight extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.driveStraight(.52, -.56); // Left speed & Right Speed to pivot right
-    	setTimeout(.65);
+    	Robot.cheeringSection.waveUp();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return isTimedOut();
+        return false;
     }
-
+ 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.driveTrain.driveStraight(0);
+    	Robot.cheeringSection.defaultPos();
     }
 
     // Called when another command which requires one or more of the same

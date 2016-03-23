@@ -43,7 +43,7 @@ public class DriveToDefense extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	Robot.driveTrain.driveStraight(.50, .538); // Left speed & Right Speed
-    	setTimeout(7.25); // Drive roughly 16ft (195 inches to go Under low Bar.
+    	setTimeout(5.25); // Drive roughly 8ft (195 inches to go Under low Bar.
     }
 
     // Make this return true when this Command no longer needs to run execute()

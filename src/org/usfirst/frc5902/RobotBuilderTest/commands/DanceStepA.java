@@ -5,11 +5,11 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
-Turns the robot to the right during autonomous
+ *
  */
-public class TurnRight extends Command {
+public class DanceStepA extends Command {
 
-    public TurnRight() {
+    public DanceStepA() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     	requires(Robot.driveTrain);
@@ -17,12 +17,13 @@ public class TurnRight extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.driveStraight(.52, -.56); // Left speed & Right Speed to pivot right
-    	setTimeout(.65);
+    	Robot.driveTrain.driveStraight(-.5, .5);
+    	setTimeout(2);
     }
 
     // Make this return true when this Command no longer needs to run execute()
