@@ -20,6 +20,18 @@ public class AutonomousFlagWave extends CommandGroup {
     	addSequential(new WaveFlagR());
     	addSequential(new WaveFlagL());
     	addSequential(new WaveFlagR());
+    	addSequential(new WaveFlagL());
+    	addSequential(new WaveFlagR());
+    	addSequential(new WaveFlagL());
+    	addSequential(new WaveFlagR());
+    	addSequential(new WaveFlagL());
+    	addSequential(new WaveFlagR());
+    	addSequential(new WaveFlagL());
+    	addSequential(new WaveFlagR());
+    	addSequential(new WaveFlagL());
+    	addSequential(new WaveFlagR());
+    	addSequential(new WaveFlagL());
+    	addSequential(new WaveFlagR());
     	
         // Add Commands here:
         // e.g. addSequential(new Command1());
