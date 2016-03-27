@@ -33,8 +33,9 @@ public class AutoShootBall extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.pneumaticSystem.reverseActuator();
     	Robot.pneumaticSystem.offActuator();
-        SmartDashboard.putString("Solenoid Status:", "Extended");
+        SmartDashboard.putString("Solenoid Status:", "Auto Ended");
     }
 
     // Called when another command which requires one or more of the same

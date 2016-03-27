@@ -3,20 +3,14 @@ package org.usfirst.frc5902.RobotBuilderTest.commands;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 /**
- Automatically drives the robot to the low-goal...
- Fahrt das roboter zu das niedrieges tor automatish...
+ *
  */
-public class AutonomousLowGoal extends CommandGroup {
+public class PusherOutIn extends CommandGroup {
     
-    public  AutonomousLowGoal() {
-    	addSequential(new DriveToDefense());
-    	addSequential(new WaitHalfSecond()); // Wait a bit
-    	addSequential(new TurnRight());
-    	addSequential(new WaitHalfSecond()); // Wait a bit
-    	addSequential(new DriveToTower());
-    	addSequential(new OneEightyIntake());
-    	addSequential(new AutoShootBall());
-        
+    public  PusherOutIn() {
+    	addSequential(new ExtendBallKicker());
+    	addSequential(new RetractBallPusher());
+
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());

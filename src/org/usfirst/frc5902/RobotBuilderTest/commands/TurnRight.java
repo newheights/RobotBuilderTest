@@ -21,7 +21,7 @@ public class TurnRight extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.driveStraight(.52, -.56); // Left speed & Right Speed to pivot right
+    	Robot.driveTrain.driveStraight(.69, -.71); // Left speed one way & Right Speed the other to pivot right
     	setTimeout(.65);
     }
 

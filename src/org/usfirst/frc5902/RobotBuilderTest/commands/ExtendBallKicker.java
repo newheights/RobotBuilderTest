@@ -45,7 +45,8 @@ public class ExtendBallKicker extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	Robot.pneumaticSystem.forwardActuator();
-    	setTimeout(1);
+        SmartDashboard.putString("Solenoid Status:", "OUT");
+        setTimeout(.5);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -55,8 +56,8 @@ public class ExtendBallKicker extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.pneumaticSystem.offActuator();
-        SmartDashboard.putString("Solenoid Status:", "Extended");
+    	Robot.pneumaticSystem.reverseActuator();
+        SmartDashboard.putString("Solenoid Status:", "Complete");
     }
 
     // Called when another command which requires one or more of the same
