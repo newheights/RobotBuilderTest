@@ -92,10 +92,10 @@ public class Robot extends IterativeRobot {
   
         autoChooser = new SendableChooser();
         autoChooser.addDefault("Autonomous Do Nothing", new AutonomousCommand());
-        autoChooser.addObject("AutonomousLowGoal", new AutonomousLowGoal());
-        autoChooser.addObject("Autonomous Flag Wave", new AutonomousFlagWave());
-        autoChooser.addObject("Autonomous Dance Party", new AutonomousDanceParty());
-
+        autoChooser.addObject("Autonomous Low Goal", new AutonomousLowGoal());
+        autoChooser.addObject("Autonomous Self Destruct", new AutonomousCommand());
+      //  autoChooser.addObject("Autonomous Flag Wave", new AutonomousFlagWave());
+      // autoChooser.addObject("Autonomous Dance Party", new AutonomousDanceParty());
         SmartDashboard.putData("Autonomous Mode Chooser", autoChooser);
         
     }
