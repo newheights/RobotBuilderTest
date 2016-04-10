@@ -7,9 +7,9 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  Drives the robot to the base of the tower during autonomous
  */
-public class DriveToTower extends Command {
+public class DriveCloserToTower extends Command {
 
-    public DriveToTower() {
+    public DriveCloserToTower() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     	requires(Robot.driveTrain);
@@ -22,7 +22,7 @@ public class DriveToTower extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	Robot.driveTrain.driveStraight(.50,  .538);
-    	setTimeout(5);
+    	setTimeout(1.5);
     }
 
     // Make this return true when this Command no longer needs to run execute()

@@ -5,14 +5,14 @@ import org.usfirst.frc5902.RobotBuilderTest.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- Drives the robot to the base of the tower during autonomous
+ *
  */
-public class DriveToTower extends Command {
+public class AutoFullEject extends Command {
 
-    public DriveToTower() {
+    public AutoFullEject() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(Robot.driveTrain);
+    	requires(Robot.intake);
     }
 
     // Called just before this Command runs the first time
@@ -21,8 +21,8 @@ public class DriveToTower extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.driveStraight(.50,  .538);
-    	setTimeout(5);
+    	Robot.intake.ejectDirection();
+    	setTimeout(2);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -32,11 +32,12 @@ public class DriveToTower extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.driveTrain.driveStraight(0);
-    	}
+    	Robot.intake.stop();
+    }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    end();
     }
 }

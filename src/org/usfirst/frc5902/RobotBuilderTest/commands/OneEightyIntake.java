@@ -21,7 +21,7 @@ public class OneEightyIntake extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.intake.intakeDirection();
+    	Robot.intake.ejectDirection();
     	setTimeout(.0015);
     }
 

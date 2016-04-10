@@ -126,7 +126,9 @@ public class OI {
         SmartDashboard.putData("Right 45", new TurnRight());
         SmartDashboard.putData("Test Autonomous Command Group", new AutonomousLowGoal());
 */
-        SmartDashboard.putData("Auto Shoot Ball", new AutoShootBall());
+        // SmartDashboard.putData("Auto Shoot Ball", new AutoShootBall());
+        SmartDashboard.putData("Auto TEST 1...2...3", new AutoTest123());
+
         // SmartDashboard.putNumber("GetUltrasonic", new ());
         //SmartDashboard.putData("ArcadeDrive", new GetX());
 
